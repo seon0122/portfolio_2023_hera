@@ -1,0 +1,89 @@
+/* common.css == header, footer 공통영역 Design */
+/* header */
+header {
+    background:aqua;
+    width:calc(100% - 200px); /* full */
+    margin:0 auto; height:70px;
+    display:flex; 
+    justify-content:space-between;
+    align-items: center;
+    border-bottom:1px solid #c7c7c7;
+}
+header h1 {width:160px;}
+header h1 a {}
+header h1 a img {width:100%;}
+header nav {}
+header nav .gnb {
+    background:lime;
+    display:flex; flex-flow:row nowrap;
+}
+header nav .gnb li {}
+header nav .gnb li a {font-size: 1.375rem; margin-right:50px;}
+header nav .gnb li a:last-child {margin-right:0;}
+header nav .gnb li > .sub1 {
+    background:yellow;
+    position:absolute;
+    display: none;
+}
+header nav .gnb li > .sub1 > li {}
+header nav .gnb li > .sub1 > li a {}
+header nav .gnb li > .sub1 > li > .sub2 {
+    background:orange; 
+}
+header nav .gnb li > .sub1 > li > .sub2 > li {}
+header nav .gnb li > .sub1 > li > .sub2 > li > a {}
+header nav .gnb li .sub_right {
+    background:pink; display: none;
+}
+header nav .gnb li .sub_right a {
+    display:block;
+    width:250px;
+}
+header nav .gnb li .sub_right a img {width:100%;}
+header .nav_right {background:lightcoral;}
+header .nav_right #map {font-size: 1.375rem;}
+header .nav_right #search {margin-left:30px;}
+header .nav_right #search img {}
+
+
+
+/* header nav {
+    background: lime;
+}
+header nav > ul {
+    display:flex;
+    align-items:center;
+}
+header nav > ul > li {background:tomato;}
+header nav > ul > li > a {
+    display:block; 
+    margin-right:50px;
+}
+header nav > ul > li > a:last-child {margin-right:0;}
+header nav > ul > li > .nav_sub {
+    background:yellow;
+    display:flex; justify-content:space-between;
+    position:absolute; 
+    width:calc(100% - 200px);
+}
+header nav > ul > li > .nav_sub > .n_s_left {
+    display: flex; flex-flow: row nowrap;
+}
+header nav > ul > li > .nav_sub > .n_s_left > li {}
+header nav > ul > li > .nav_sub > .n_s_left > li > ul {}
+header nav > ul > li > .nav_sub > .n_s_left > li > ul > li {background:gray;}
+header nav > ul > li > .nav_sub > .n_s_left > li > ul > li > a {}
+header nav > ul > li > .nav_sub > .n_s_right {
+    background:skyblue;
+    display:flex; flex-flow: column nowrap;
+}
+header nav > ul > li > .nav_sub > .n_s_right a {width:250px;}
+header nav > ul > li > .nav_sub > .n_s_right a img {width:100%;}
+header .nav_right {
+    background:pink;
+    display: flex;
+    align-items: center;
+}
+header .nav_right #map {}
+header .nav_right #search {margin-left: 30px;}
+header .nav_right #search img {} */
