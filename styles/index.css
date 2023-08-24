@@ -1,9 +1,8 @@
 /* main */
 main {}
-main .visual {background: lime;
-    /* max-width:; */
-    height:900px;
-    background:url(../images/main_01.jpg);
+main .visual {/* background: lime; */
+    height:100vh;
+    background:url(../images/main_03.jpg);
     background-size:cover;
     background-position: center;
 }
@@ -19,19 +18,106 @@ main .visual p {
     letter-spacing:-0.02em;
     margin-bottom: 80px;
 }
-main section .view {
+/* 공통 적용 css */
+main section #view {
     font-size:1.375rem; letter-spacing:-0.02em;
     margin-right:6px; padding:20px 30px;
     color:#222; border:1px solid #222;
     border-radius:50px;
 }
-main section .view img {margin-left: 6px;}
+main section #view img {margin-left: 6px;}
+main section p {font-size:1.375rem; letter-spacing:-0.02em;}
+main section h2 {font-size:2.188rem; font-weight:500; letter-spacing:-0.02em;}
 main .main_contents {
     height:700px;
-    background:url(../images/banner_01.jpg);
+    background:url(../images/banner_01.jpg) no-repeat;
     background-size:cover;
-    background-position: center;
-    text-align:center;
+    background-position:center;
+    position: relative;
 }
-main .main_contents p {font-size:1.375rem; letter-spacing:-0.02em;}
-main .main_contents p h2 {font-size:2.188rem; letter-spacing:-0.02em;}
+main .main_contents > * {position:absolute;}
+main .main_contents p {bottom:195px; left:42%;}
+main .main_contents h2 {bottom:134px; left:22%;}
+main .main_contents #view {bottom:50px; left:45%;}
+main .sub_contents {display:flex;}
+main .sub_contents > img {
+    width: 800px; height: 800px;
+    object-fit:cover;
+}
+main .sub_contents .right {
+    margin-left: 70px;
+    display: flex; flex-flow: column nowrap;
+    align-items: flex-start; justify-content: center;
+}
+main .sub_contents .right p {}
+main .sub_contents .right h2 {margin:100px 0 50px;}
+main > .best {
+    width:calc(100% - 200px);
+    margin: 0 auto;
+}
+main .best > p {
+    font-size:2.5rem; font-weight:500; 
+    text-align: center;
+    margin-top:100px;
+    margin-bottom:45px;
+}
+main .best_contents {
+    display:flex; justify-content: space-between;
+    margin-bottom:80px;
+}
+main .best_contents .contents {position: relative;}
+main .best_contents .contents img {width:100%;}
+main .best_contents .c1,
+main .best_contents .c3 {
+    width:340px;}
+main .best_contents .c2 {width: 490px;}
+
+main .best_contents .contents .content_txt {
+    display:block;  
+    text-align:center; line-height:29px; font-size:1.25rem;
+    position:absolute; 
+}
+main .best_contents .contents .t1,
+main .best_contents .contents .t3 {
+    width:340px; bottom:5%;
+}
+main .best_contents .contents .t2 {
+    width:490px; bottom:5%;
+}
+/* lovers */
+main .lovers {
+    width:calc(100% - 200px);
+    margin: 0 auto;
+}
+main .lovers > p {
+    font-size:2.5rem; font-weight:500; 
+    text-align: center;
+    margin-top:80px;
+    margin-bottom:50px;
+}
+main .lovers #lovers_slide {margin-bottom:100px;}
+main .lovers #lovers_slide .swiper-wrapper {}
+main .lovers #lovers_slide .swiper-wrapper .swiper-slide {
+    /* 공통 slide 1~6 */
+    width:350px; height:275px;
+    position: relative; margin-right:40px;
+    background-size: cover;
+    background-position: center;
+}
+main .lovers #lovers_slide .swiper-wrapper .swiper-slide .slide_txt {
+    position: absolute;
+    font-size:1.063rem; letter-spacing:-0.02em;
+    bottom:0; text-align: center;
+    background:rgba(255,255,255,0.8);
+}
+main .lovers #lovers_slide .swiper-wrapper .swiper-slide .slide_txt p {
+    margin:10px 0;
+}
+main .lovers #lovers_slide .swiper-wrapper .slide1 {background:url(../images/lovers_01.jpg);}
+main .lovers #lovers_slide .swiper-wrapper .slide2 {background:url(../images/lovers_01_3.jpg);}
+main .lovers #lovers_slide .swiper-wrapper .slide3 {background:url(../images/lovers_01_5.jpg);}
+main .lovers #lovers_slide .swiper-wrapper .slide4 {background:url(../images/lovers_01_8.jpg);}
+main .lovers #lovers_slide .swiper-wrapper .slide5 {background:url(../images/lovers_01_4.jpg);}
+main .lovers #lovers_slide .swiper-wrapper .slide6 {background:url(../images/lovers_01_6.jpg);}
+main .lovers #lovers_slide .swiper-button-prev {}
+main .lovers #lovers_slide .swiper-button-next {}
