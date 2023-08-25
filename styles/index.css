@@ -51,8 +51,9 @@ main .sub_contents .right {
 }
 main .sub_contents .right p {}
 main .sub_contents .right h2 {margin:100px 0 50px;}
-main > .best {
-    width:calc(100% - 200px);
+main > .best,
+main > .lovers {
+    max-width:1240px;
     margin: 0 auto;
 }
 main .best > p {
@@ -85,10 +86,7 @@ main .best_contents .contents .t2 {
     width:490px; bottom:5%;
 }
 /* lovers */
-main .lovers {
-    width:calc(100% - 200px);
-    margin: 0 auto;
-}
+main .lovers {}
 main .lovers > p {
     font-size:2.5rem; font-weight:500; 
     text-align: center;
@@ -99,25 +97,49 @@ main .lovers #lovers_slide {margin-bottom:100px;}
 main .lovers #lovers_slide .swiper-wrapper {}
 main .lovers #lovers_slide .swiper-wrapper .swiper-slide {
     /* 공통 slide 1~6 */
-    width:350px; height:275px;
-    position: relative; margin-right:40px;
-    background-size: cover;
+    width:295px; height:290px;
+    position: relative;
+    background-size: contain;
     background-position: center;
 }
 main .lovers #lovers_slide .swiper-wrapper .swiper-slide .slide_txt {
     position: absolute;
+    width:300px;
     font-size:1.063rem; letter-spacing:-0.02em;
     bottom:0; text-align: center;
     background:rgba(255,255,255,0.8);
+    opacity:0; transition: opacity 0.5s linear;
+}
+main .lovers #lovers_slide .swiper-wrapper .swiper-slide:hover .slide_txt {
+    opacity:1;
 }
 main .lovers #lovers_slide .swiper-wrapper .swiper-slide .slide_txt p {
-    margin:10px 0;
+    margin:10px 0; text-align:center;
+    font-size:1.063rem; line-height:25px;
+    overflow: hidden; text-overflow: ellipsis; white-space:nowrap;
 }
-main .lovers #lovers_slide .swiper-wrapper .slide1 {background:url(../images/lovers_01.jpg);}
-main .lovers #lovers_slide .swiper-wrapper .slide2 {background:url(../images/lovers_01_3.jpg);}
-main .lovers #lovers_slide .swiper-wrapper .slide3 {background:url(../images/lovers_01_5.jpg);}
-main .lovers #lovers_slide .swiper-wrapper .slide4 {background:url(../images/lovers_01_8.jpg);}
-main .lovers #lovers_slide .swiper-wrapper .slide5 {background:url(../images/lovers_01_4.jpg);}
-main .lovers #lovers_slide .swiper-wrapper .slide6 {background:url(../images/lovers_01_6.jpg);}
-main .lovers #lovers_slide .swiper-button-prev {}
-main .lovers #lovers_slide .swiper-button-next {}
+main .lovers #lovers_slide .swiper-wrapper .slide1 {background:url(../images/lovers_01_1.jpg) no-repeat;}
+main .lovers #lovers_slide .swiper-wrapper .slide2 {background:url(../images/lovers_01_3.jpg) no-repeat;}
+main .lovers #lovers_slide .swiper-wrapper .slide3 {background:url(../images/lovers_01_5.jpg) no-repeat;}
+main .lovers #lovers_slide .swiper-wrapper .slide4 {background:url(../images/lovers_01_8.jpg) no-repeat;}
+main .lovers #lovers_slide .swiper-wrapper .slide5 {background:url(../images/lovers_01_4.jpg) no-repeat;}
+main .lovers #lovers_slide .swiper-wrapper .slide6 {background:url(../images/lovers_01_6.jpg) no-repeat;}
+main .lovers #lovers_slide .swiper-wrapper .slide7 {background:url(../images/lovers_01_7.jpg) no-repeat;}
+main .lovers #lovers_slide .swiper-wrapper .slide8 {background:url(../images/lovers_01_2.jpg) no-repeat;}
+main .lovers #lovers_slide .swiper-button-prev,
+main .lovers #lovers_slide .swiper-button-next {
+    width:27px; height:38px; 
+}
+main .lovers #lovers_slide .swiper-button-prev {
+    background:url(../images/png/prev.png);
+}
+main .lovers #lovers_slide .swiper-button-next {
+    background:url(../images/png/next.png);
+}
+main .lovers #lovers_slide .swiper-button-prev::after,
+main .lovers #lovers_slide .swiper-button-next::after {display:none;}
+/* 애니메이션 */
+@keyframes font {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
