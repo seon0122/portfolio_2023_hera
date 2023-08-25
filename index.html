@@ -204,30 +204,48 @@
                             <p>@herabeauty_official<br>On the days when you want to ma...</p>
                         </div>
                     </div>
-                    <!-- slide 이전, 다음 버튼 -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="swiper-slide slide7">
+                        <div class="slide_txt">
+                            <p>@herabeauty_official<br>On the days when you want to ma...</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide8">
+                        <div class="slide_txt">
+                            <p>@herabeauty_official<br>On the days when you want to ma...</p>
+                        </div>
+                    </div>
                 </div>
+                <!-- slide 이전, 다음 버튼 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="f_top">
-            <div class="left">
-                <a href="#">서비스이용약관</a>
-                <a href="#">UGC이용약관</a>
-                <a href="#">개인정보처리방침</a>
-                <a href="#">뷰티포인트</a>
-                <a href="#">사이트맵</a>
-            </div>
-            <div class="right">
-                <a href="#" title="페이스북">페이스북</a>
-                <a href="#" title="유튜브">유튜브</a>
-                <a href="#" title="인스타그램">인스타그램</a>
-                <a href="#" title="카카오톡">카카오톡</a>
-            </div>
-        </div>
-        <p></p>
-    </footer>
+    <!-- footer php -->
+    <?php include('./footer.php') ?>
+
+    <script>
+        // main swiper-slide
+        // const 변수명 = new Swiper('적용대상');
+        // const 변수명 = new Swiper('적용대상',{속성:값, 속성:값});
+        const lovers_slide = new Swiper('#lovers_slide',{
+            slidesPerView:4,
+            spaceBetween:20,
+            loop:true, //마지막 슬라이드 -> 첫번째 슬라이드 자연스러운 변경 
+            autoplay:{ //자동재생
+				delay:3000, //슬라이드 간격(밀리초) 기본3초
+                disableOnInteraction:false, //버튼 클릭 후 자동재생유지
+            }, //자동재생
+            speed:800,
+            navigation: { //이전, 다음 내비게이션 연결
+                // next, prev 객체 연결 시 부모를 안적으면
+            // body 안에 있는 모든 swiper-next,prev를 인식하기 때문에
+            // 개별인식가능한 부모이름을 반드시 앞에 먼저 작성한다.
+                nextEl: '#lovers_slide .swiper-button-next',
+                prevEl: '#lovers_slide .swiper-button-prev',
+            },
+        });
+        console.log(lovers_slide)
+    </script>
 </body>
 </html>

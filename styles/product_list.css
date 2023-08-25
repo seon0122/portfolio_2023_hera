@@ -1,0 +1,69 @@
+main {}
+main .visual {
+    height:500px;
+    background:url(../images/product_list_04.jpg) no-repeat;
+    background-size:cover;
+    background-position:right;
+}
+main .visual h1 {
+    font-size:2.813rem; font-weight:500;
+    line-height:60px; letter-spacing:-0.02em;
+    margin-bottom:80px;
+}
+main .visual h1,
+main .visual p {
+    display: flex; flex-flow:row-reverse;
+    text-align: left; justify-content: flex-start;
+    padding:154px 165px 0 0;
+}
+main .visual p {
+    font-size:1.625rem;
+    padding:0 315px 154px 0;
+}
+main section {
+    margin:0 auto;
+    width:1240px;
+}
+main h2 {
+    font-size:2.375rem; font-weight:500;
+    text-align: center;
+    margin:50px 0 40px;
+}
+main .p_wrap {
+    display:flex; flex-flow:row wrap;
+    justify-content: space-between;
+}
+main .p_wrap p {color:#7d7d7d;}
+main .p_wrap .p_filter {display: flex; align-items: center;}
+main .p_wrap .p_filter #product_align {
+    margin-right:15px; padding:10px 20px;
+}
+main .p_wrap .p_filter #product_align option {}
+main .p_wrap .p_filter a {}
+main .p_wrap .p_filter a img {margin-left:15px;}
+/* item */
+main .container {
+    display:flex; flex-flow:row wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+main .container .item {}
+main .container .item .box {width:380px;}
+main .container .item .box .item_img img {width:100%;}
+main .container .item .txt {}
+main .container .item .txt a {}
+main .container .item .txt a > p {}
+main .container .item .txt a .name {
+    font-size:1.375rem; font-weight:500;
+}
+main .container .item .txt a .detail {line-height:20px; margin:15px 0 20px;}
+main .container .item .txt .color {}
+main .container .item .txt .color span {
+    display:inline-block; width:20px; height:20px;
+    margin-right:4px;
+}
+main .container .item .txt .color .fetal {background:#f9dabd;}
+main .container .item .txt .color .ivory {background:#dfb8a7;}
+main .container .item .txt .color .beige {background:#f0bf9b;}
+main .container .item .txt .color .sand {background:#f8cfa9;}
+main .container .item .txt .color .warm {background:#e9b789;}

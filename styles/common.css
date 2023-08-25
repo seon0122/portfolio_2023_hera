@@ -46,53 +46,37 @@ header nav .gnb li .sub_right a {
     width:250px;
 }
 header nav .gnb li .sub_right a img {width:100%;}
-header .nav_right {/* background:lightcoral; */}
+header .nav_right {/* background:lightcoral; */
+    display:flex;
+}
 header .nav_right #map {font-size: 1.375rem;}
 header .nav_right #search {margin-left:30px;}
 header .nav_right #search img {}
 
 /* footer */
-
-
-
-
-/* header nav {
-    background: lime;
+footer {
+    border-top:1px solid #c7c7c7;
+    margin:0 auto;
+    padding:0 100px;
+    background: #f4f4f4;
 }
-header nav > ul {
-    display:flex;
-    align-items:center;
+footer .f_top {
+    margin-top:25px;
+    display:flex; justify-content: space-between;
 }
-header nav > ul > li {background:tomato;}
-header nav > ul > li > a {
-    display:block; 
-    margin-right:50px;
+footer .f_top .left {}
+footer .f_top .left a {font-size: 1.063rem; color:#222;}
+footer .f_top .left a::after {
+    content:''; width:1px; height: 16px;
+    background:#c7c7c7;
+    display:inline-block;
+    margin:0 20px;
 }
-header nav > ul > li > a:last-child {margin-right:0;}
-header nav > ul > li > .nav_sub {
-    background:yellow;
-    display:flex; justify-content:space-between;
-    position:absolute; 
-    width:calc(100% - 200px);
-}
-header nav > ul > li > .nav_sub > .n_s_left {
-    display: flex; flex-flow: row nowrap;
-}
-header nav > ul > li > .nav_sub > .n_s_left > li {}
-header nav > ul > li > .nav_sub > .n_s_left > li > ul {}
-header nav > ul > li > .nav_sub > .n_s_left > li > ul > li {background:gray;}
-header nav > ul > li > .nav_sub > .n_s_left > li > ul > li > a {}
-header nav > ul > li > .nav_sub > .n_s_right {
-    background:skyblue;
-    display:flex; flex-flow: column nowrap;
-}
-header nav > ul > li > .nav_sub > .n_s_right a {width:250px;}
-header nav > ul > li > .nav_sub > .n_s_right a img {width:100%;}
-header .nav_right {
-    background:pink;
-    display: flex;
-    align-items: center;
-}
-header .nav_right #map {}
-header .nav_right #search {margin-left: 30px;}
-header .nav_right #search img {} */
+footer .f_top .left a:last-child::after {display:none;}
+footer .f_top .right {}
+footer .f_top .right a {margin-left:30px;}
+footer p {font-size: 1.063rem; margin:30px 0 25px; color:#222;}
+footer .f_btm {display: flex; padding-bottom:80px;}
+footer .f_btm p {margin-right:11px; color:#222;}
+footer .f_btm a {}
+footer .f_btm a img {}
