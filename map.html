@@ -18,20 +18,46 @@
             text-align:center;
             margin:70px 0 60px;
         }
-        main #map {
-            background: aqua;
+        main #map_search {
             display: flex; flex-flow: row nowrap;
-            width:700px; height:500px; margin:50px auto;
+            justify-content: center; align-items: center;
+            width:100%;
+            margin:50px auto;
         }
-        main #map .m_search_Frm {}
-        main #map .search {}
+        main #map_search #m_search_Frm {}
+        main #map_search #m_search_Frm fieldset {
+            padding:13px 0;
+            border-bottom: 2px solid #222;
+            width: 700px;
+        }
+        main #map_search #m_search_Frm fieldset img {
+            margin-right:20px; padding-top:5px;
+        }
+        main #map_search #m_search_Frm fieldset input {
+            background: none;
+            font-size:1.375rem;
+            vertical-align: bottom;
+            width: calc(100% - 80px);
+        }
+        main #map_search #m_search_Frm fieldset input::placeholder {color: #c7c7c7;}
+        main #map_search .search_btn {
+            padding:20px 40px; color:#fff; background:#222;
+            margin-left: 10px;
+            font-size:1.375rem;
+        }
+        #map {
+            background: aqua;
+            width:700px; height: 500px;
+            margin:0 auto 100px;
+        }
     </style>
 </head>
 <body>
     <!-- header.php -->
+    <?php include('./header.php') ?>
     <main>
         <h1>매장찾기</h1>
-        <div id="map">
+        <div id="map_search">
             <form action="#" method="get" id="m_search_Frm">
                 <fieldset>
                     <legend class="skip">매장검색양식</legend>
@@ -39,10 +65,28 @@
                     <input type="search" name="m_search_txt" autofocus placeholder="ex) 백화점, 잠실, 롯데, 면세점">
                 </fieldset>
             </form>
-            <a href="#" class="search">검색</a>
+            <a href="#" class="search_btn">검색</a>
         </div>
+        <div id="map"></div>
     </main>
     <!-- footer.php -->
     <?php include('./footer.php') ?>
+    <!-- common JS -->
+    <script src="./script/common.js"></script>
+    <!-- 카카오 지도를 사용하기 위한 JS 앱키 준비 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f274b9d43a4051b74f774d12dbf48e1d"></script>
+    <script>
+        var markerPosition  = new kakao.maps.LatLng(37.5258975,126.9284261);
+        const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        let options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(37.5258975,126.9284261), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+            };
+        let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+        marker.setMap(map);
+    </script>
 </body>
 </html>

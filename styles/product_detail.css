@@ -36,6 +36,9 @@ main .container .txt .color_box .color a span {
     display:inline-block; width:46px; height:46px;
     margin-right:10px; margin-bottom:25px;
 }
+main .container .txt .color_box .color a span:hover {
+    border: 1px solid #E4485D;
+}
 main .container .txt .color_box .color a .c_13N1 {background:#f9dabd;}
 main .container .txt .color_box .color a .c_17C1 {background:#eab8a6;}
 main .container .txt .color_box .color a .c_17N1 {background:#dfb8a7;}
@@ -64,4 +67,10 @@ main .container .txt .order .buy {
 main .container .txt .order .offline {
     color: #222;
     border: 1px solid;
+}
+main .container .txt .order .buy:hover {
+    color:#fff; border:1px solid #E4485D; background:#E4485D;
+}
+main .container .txt .order .offline:hover {
+    color:#fff; border:1px solid #E4485D; background:#E4485D;
 }

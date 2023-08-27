@@ -48,6 +48,10 @@ main .container {
     margin-bottom: 100px;
 }
 main .container .item {}
+main .container .item:hover .txt a p {
+    text-decoration: underline;
+    color:#E4485D;
+}
 main .container .item .box {width:380px;}
 main .container .item .box .item_img img {width:100%;}
 main .container .item .txt {}

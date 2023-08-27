@@ -1,57 +1,152 @@
 /* common.css == header, footer 공통영역 Design */
 /* header */
 header {
-    /* background:aqua; */
-    /* width:calc(100% - 200px); */ /* full */
-    margin:0 auto; height:70px;
-    display:flex; 
-    justify-content:space-between;
-    align-items: center;
+    background:#fff;
+    height:90px; margin:0 auto;
+    display:flex; justify-content:space-between; align-items:center;
     border-bottom:1px solid #c7c7c7;
     padding:0 100px;
 }
-/* header::after {
-    content: ''; display: block;
-    height: 1px; width: 100%;
-    background: #c7c7c7;
-} */
 header h1 {width:160px;}
 header h1 a {}
 header h1 a img {width:100%;}
 header nav {}
-header nav .gnb {
-    /* background:lime; */
+header nav > ul {
+    /* background:aqua; */
     display:flex; flex-flow:row nowrap;
 }
-header nav .gnb li {}
-header nav .gnb li a {font-size: 1.375rem; margin-right:50px;}
-header nav .gnb li a:last-child {margin-right:0;}
-header nav .gnb li > .sub1 {
-    background:yellow;
-    position:absolute;
-    display: none;
+header nav .gnb > li {}
+header nav .gnb > li > a {
+    line-height:90px; padding:0 25px;
+    font-size:1.375rem;
+    display: block;
+    white-space:nowrap;
 }
-header nav .gnb li > .sub1 > li {}
-header nav .gnb li > .sub1 > li a {}
-header nav .gnb li > .sub1 > li > .sub2 {
-    background:orange; 
-}
-header nav .gnb li > .sub1 > li > .sub2 > li {}
-header nav .gnb li > .sub1 > li > .sub2 > li > a {}
-header nav .gnb li .sub_right {
-    background:pink; display: none;
-}
-header nav .gnb li .sub_right a {
-    display:block;
-    width:250px;
-}
-header nav .gnb li .sub_right a img {width:100%;}
-header .nav_right {/* background:lightcoral; */
-    display:flex;
-}
-header .nav_right #map {font-size: 1.375rem;}
+header nav ul li a.active {border-bottom:4px solid #E4485D;}
+header .nav_right {display:flex;}
+header .nav_right #map span {font-size: 1.375rem;}
 header .nav_right #search {margin-left:30px;}
 header .nav_right #search img {}
+/* sub menu */
+header nav ul li .sub {
+    background: #f4f4f4;
+    width:100%;
+    height:485px;
+    display: flex; justify-content: space-between;
+    padding-left: 100px;
+    padding-top: 55px;
+    position: absolute; 
+    left: 0;
+}
+header nav ul li .sub li {
+    margin-right:80px;
+    white-space:nowrap;
+}
+header nav ul li .sub li span {
+    padding:0 150px 15px 0;
+    border-bottom:1px solid #222;
+    font-size:1.563rem; font-weight:500; color: #222;
+}
+header nav ul li .s1 li a {
+    font-size:1.563rem; font-weight:500;
+    display:block;
+    color: #222;
+}
+header nav ul li .sub li .sub2 {margin-top: 35px;}
+header nav ul li .sub li .sub2 li a {
+    font-size: 1.313rem; line-height: 40px;
+}
+header nav ul li .sub li a:hover,
+header nav ul li .sub li ul li a:hover {color: #E4485D;}
+
+/* header nav ul li .s1 {display: none;}
+header nav ul li .s2 {display: none;}
+header nav ul li .s3 {display: none;}
+header nav ul li .s4 {display: none;}
+header nav ul li .s5 {display: none;} */
+header nav ul li .s5 {background:none;}
+header nav ul li .sub .right {
+    width: 250px;
+    right:100px;
+}
+header nav ul li .sub .right a {
+    display: flex;
+    flex-flow: column nowrap;
+}
+header nav ul li .sub .right a img {
+    width:100%; border-radius: 10px; margin-bottom:10px;
+}
+header nav ul li .sub .right a:first-child {margin-bottom:35px;}
+header nav ul li .sub .right {
+    position: relative; left: 0;
+    width: 250px;
+    right:100px;
+}
+header .nav_right {
+    display: flex; align-items: center;
+}
+header .nav_right #map_btn {}
+header .nav_right #map_btn span {
+    white-space:nowrap;
+    font-size:1.375rem;
+}
+header .nav_right #search {margin-left:30px; width:24px; height:24px;}
+header .nav_right #search img {width:100%;}
+
+/* open_search */
+header #open_search {
+    background:#f4f4f4;
+    position: absolute; left:0; top:90px;
+    width: 100%; 
+    /* height:90px; */
+    padding:60px 0;
+}
+header #open_search .search {
+    display: flex; justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+header #open_search .search #searchFrm {}
+header #open_search .search #searchFrm fieldset {
+    padding:12px 0;
+    border-bottom: 2px solid #222;
+    width: 700px;
+}
+header #open_search .search #searchFrm fieldset img {
+    margin-right:20px; padding-top:5px;
+}
+header #open_search .search #searchFrm fieldset input {
+    background: none;
+    font-size:1.375rem;
+    vertical-align: bottom;
+    width: calc(100% - 80px);
+}
+header #open_search .search #searchFrm fieldset input::placeholder {color: #c7c7c7;}
+header #open_search .search .search_btn {
+    padding:20px 40px; color:#fff; background:#222;
+    margin-left: 10px;
+    font-size:1.375rem;
+}
+header #open_search .search_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:30px;
+}
+header #open_search .search_list p {margin-right: 30px;}
+header #open_search .search_list .list_txt {}
+header #open_search .search_list .list_txt a {
+    color:#7d7d7d; margin-right:20px;
+}
+header #open_search .search_list .list_txt a:hover {
+    color:#E4485D;
+}
+header #open_search .search_close {
+    margin-top: 100px;
+    display: block;
+    text-align: center;
+}
+header #open_search .search_close img {}
 
 /* footer */
 footer {

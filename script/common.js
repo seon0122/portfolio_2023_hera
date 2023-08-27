@@ -33,3 +33,19 @@ sub.forEach(function(s){
         s.style.display = 'none' // 서브메뉴 숨기기
     })
 })
+
+// open_search JS
+const open_search = document.querySelector('#open_search')
+const search_close = document.querySelector('.search_close')
+const search_btn = document.querySelector('#search')
+console.log(open_search, search_close, search_btn)
+// open_search 숨기기
+open_search.style.display = 'none'
+// 돋보기 클릭 시 open_search 출력
+search_btn.addEventListener('click',function(){
+    open_search.style.display = 'block'
+})
+// open_search 안 버튼(^) 클릭 시 open_search 숨기기
+search_close.addEventListener('click',function(){
+    open_search.style.display = 'none'
+})
