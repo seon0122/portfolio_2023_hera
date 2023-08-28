@@ -25,7 +25,12 @@ main section #view {
     color:#222; border:1px solid #222;
     border-radius:50px;
 }
-main section #view img {margin-left: 6px;}
+main section #view:hover {
+    color:#fff;
+    background:#E4485D;
+    border:1px solid #E4485D;
+}
+main section #view .fa-solid {margin-left: 6px;}
 main section p {font-size:1.375rem; letter-spacing:-0.02em;}
 main section h2 {font-size:2.188rem; font-weight:500; letter-spacing:-0.02em;}
 main .main_contents {
@@ -69,14 +74,14 @@ main .best_contents {
 main .best_contents .contents {position: relative;}
 main .best_contents .contents img {width:100%;}
 main .best_contents .c1,
-main .best_contents .c3 {
-    width:340px;}
+main .best_contents .c3 {width:340px;}
 main .best_contents .c2 {width: 490px;}
 
 main .best_contents .contents .content_txt {
     display:block;  
     text-align:center; line-height:29px; font-size:1.25rem;
     position:absolute; 
+    font-weight:500;
 }
 main .best_contents .contents .t1,
 main .best_contents .contents .t3 {
@@ -85,6 +90,7 @@ main .best_contents .contents .t3 {
 main .best_contents .contents .t2 {
     width:490px; bottom:5%;
 }
+main .best_contents .contents:hover {color:#E4485D;}
 /* lovers */
 main .lovers {}
 main .lovers > p {
@@ -138,8 +144,3 @@ main .lovers #lovers_slide .swiper-button-next {
 }
 main .lovers #lovers_slide .swiper-button-prev::after,
 main .lovers #lovers_slide .swiper-button-next::after {display:none;}
-/* 애니메이션 */
-@keyframes font {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
