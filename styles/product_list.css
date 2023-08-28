@@ -1,28 +1,24 @@
 main {}
-main .visual {
-    height:500px;
+main .visual_bg {
     background:url(../images/product_list_04.jpg) no-repeat;
     background-size:cover;
-    background-position:right;
+    height:500px;
+}
+main .visual {
+    position: absolute;
+    left: 165px;
+    top: 180px;
 }
 main .visual h1 {
     font-size:2.813rem; font-weight:500;
-    line-height:60px; letter-spacing:-0.02em;
-    margin-bottom:80px;
+    line-height:70px; letter-spacing:-0.02em;
+    margin-bottom:70px;
 }
-main .visual h1,
-main .visual p {
-    display: flex; flex-flow:row-reverse;
-    text-align: left; justify-content: flex-start;
-    padding:154px 165px 0 0;
-}
-main .visual p {
-    font-size:1.625rem;
-    padding:0 315px 154px 0;
-}
-main section {
-    margin:0 auto;
+main .visual p {font-size:1.625rem;}
+main .product_warp {
     width:1240px;
+    margin:0 auto;
+    width:calc(100% - 30px);
 }
 main h2 {
     font-size:2.375rem; font-weight:500;
@@ -35,10 +31,18 @@ main .p_wrap {
 }
 main .p_wrap p {color:#7d7d7d;}
 main .p_wrap .p_filter {display: flex; align-items: center;}
-main .p_wrap .p_filter #product_align {
+main .p_wrap .p_filter #select_box {}
+main .p_wrap .p_filter #select_box .box_title {}
+main .p_wrap .p_filter #select_box .box_title img {}
+main .p_wrap .p_filter #select_box .box_contents {}
+main .p_wrap .p_filter #select_box .box_contents li {}
+main .p_wrap .p_filter #select_box .box_contents li button {}
+
+main .p_wrap .p_filter #product_align {}
+/* main .p_wrap .p_filter #product_align {
     margin-right:15px; padding:10px 20px;
 }
-main .p_wrap .p_filter #product_align option {}
+main .p_wrap .p_filter #product_align option {} */
 main .p_wrap .p_filter a {}
 main .p_wrap .p_filter a img {margin-left:15px;}
 /* item */

@@ -34,6 +34,28 @@ sub.forEach(function(s){
     })
 })
 
+// m_open_nav JS
+const m_nav = document.querySelector('.m_nav')
+const m_nav_open = document.querySelector('#m_nav_open')
+const m_nav_img = document.querySelector('.m_nav img')
+console.log(m_nav, m_nav_open, m_nav_img)
+// m_nav_open 초기 숨기기
+let isOpen = true
+m_nav_open.style.display = 'none'
+m_nav.addEventListener('click', function(){
+    if (isOpen) {
+        m_nav_img.src = './images/png/close.png'
+        m_nav_open.style.display = 'block'
+        isOpen = true;
+    } else {
+        m_nav_img.src = './images/png/menu.png'
+        m_nav_open.style.display = 'none'
+        isOpen = false;
+    }
+
+    isOpen = !isOpen // 상태 토글
+})
+
 // open_search JS
 const open_search = document.querySelector('#open_search')
 const search_close = document.querySelector('.search_close')

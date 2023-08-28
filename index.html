@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -149,25 +150,23 @@
                     <ul class="sub s5"></ul>
                 </li>
             </ul>
-            <!-- <a href="#" class="m_nav">
-                <span></span><span></span><span></span>
-            </a> -->
         </nav>
         <div class="nav_right">
             <a href="./map.html" id="map_btn"><span>매장찾기</span></a>
             <a href="#" id="search"><img src="./images/png/search.png" alt="검색"></a>
         </div>
+        <a href="#" class="m_nav"><img src="./images/png/menu.png" alt="메뉴열기"></a>
         <!-- m_nav_open -->
-        <!-- <div id="m_nav_open">
+        <div id="m_nav_open">
             <ul>
                 <li><a href="#">헤라 스토리</a></li>
                 <li><a href="#">메이크업</a></li>
                 <li><a href="#">스킨케어</a></li>
                 <li><a href="#">프래그런스</a></li>
                 <li><a href="#">#HERA</a></li>
-                <li><a href="./map.html" class="map_search">매장찾기</a></li>
             </ul>
-        </div> -->
+                <a href="./map.html" class="map_search">매장찾기</a>
+        </div>
         <!-- open_search -->
         <div id="open_search">
             <div class="search">
@@ -214,24 +213,21 @@
             </div>
         </section>
         <section class="best">
-            <p>BEST SELLER</p>
+            <h2>BEST SELLER</h2>
             <div class="best_contents">
                 <a href="./product_list.html" class="contents c1">
-                    <img src="./images/best_01.jpg" alt="">
                     <p class="content_txt t1">센슈얼 파우더 매트 리퀴드<br>SENSUAL POWDER MATTE LIQUID</p>
                 </a>
                 <a href="./product_list.html" class="contents c2">
-                    <img src="./images/best_02-1.jpg" alt="">
                     <p class="content_txt t2">블랙 쿠션<br>BLACK CUSHION</p>
                 </a>
                 <a href="./product_list.html" class="contents c3">
-                    <img src="./images/best_03.jpg" alt="">
                     <p class="content_txt t3">UV 프로텍터 액티브 선 밤<br>UV PROTECTOR ACTIVE SUN BALM</p>                    
                 </a>
             </div>
         </section>
         <section class="lovers">
-            <p># HERA LOVERS</p>
+            <h2># HERA LOVERS</h2>
             <!-- Slider main container -->
             <div class="swiper" id="lovers_slide">
                 <!-- Additional required wrapper -->
@@ -287,25 +283,27 @@
     <!-- footer php -->
     <!-- <?php include('./footer.php') ?> -->
     <footer>
-        <div class="f_top">
-            <div class="left">
-                <a href="#">서비스이용약관</a>
-                <a href="#">UGC이용약관</a>
-                <a href="#">개인정보처리방침</a>
-                <a href="#">뷰티포인트</a>
-                <a href="#">사이트맵</a>
+        <div class="f_wrap">
+            <div class="f_top">
+                <div class="left">
+                    <a href="#">서비스이용약관</a>
+                    <a href="#">UGC이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">뷰티포인트</a>
+                    <a href="#">사이트맵</a>
+                </div>
+                <div class="right">
+                    <a href="#" title="페이스북"><img src="./images/png/facebook.png" alt=""></a>
+                    <a href="#" title="유튜브"><img src="./images/png/youtube.png" alt=""></a>
+                    <a href="#" title="인스타그램"><img src="./images/png/instagram.png" alt=""></a>
+                    <a href="#" title="카카오톡"><img src="./images/png/kakaotalk.png" alt=""></a>
+                </div>
             </div>
-            <div class="right">
-                <a href="#" title="페이스북"><img src="./images/png/facebook.png" alt=""></a>
-                <a href="#" title="유튜브"><img src="./images/png/youtube.png" alt=""></a>
-                <a href="#" title="인스타그램"><img src="./images/png/instagram.png" alt=""></a>
-                <a href="#" title="카카오톡"><img src="./images/png/kakaotalk.png" alt=""></a>
+            <p>고객상담팀(수신자요금부담) 080-023-5454 (상담시간 월~금 : AM 09:00 ~ PM 06:00)</p>
+            <div class="f_btm">
+                <p>© AMOREPACIFIC CORPORATION. All rights reserved.</p>
+                <a href="#"><img src="./images/web-accessibility_kr_230510.png" alt=""></a>
             </div>
-        </div>
-        <p>고객상담팀(수신자요금부담) 080-023-5454 (상담시간 월~금 : AM 09:00 ~ PM 06:00)</p>
-        <div class="f_btm">
-            <p>© AMOREPACIFIC CORPORATION. All rights reserved.</p>
-            <a href="#"><img src="./images/web-accessibility_kr_230510.png" alt=""></a>
         </div>
     </footer>
     <script src="./script/common.js"></script>
@@ -324,13 +322,18 @@
             speed:800,
             navigation: { //이전, 다음 내비게이션 연결
                 // next, prev 객체 연결 시 부모를 안적으면
-            // body 안에 있는 모든 swiper-next,prev를 인식하기 때문에
-            // 개별인식가능한 부모이름을 반드시 앞에 먼저 작성한다.
+                // body 안에 있는 모든 swiper-next,prev를 인식하기 때문에
+                // 개별인식가능한 부모이름을 반드시 앞에 먼저 작성한다.
                 nextEl: '#lovers_slide .swiper-button-next',
                 prevEl: '#lovers_slide .swiper-button-prev',
             },
+            breakpoints:{
+                400:{slidesPerView:2},
+                900:{slidesPerView:3}, 
+                1200:{slidesPerView:4}, 
+            },
         });
         console.log(lovers_slide)
-    </script>
+        </script>
 </body>
 </html>

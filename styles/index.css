@@ -24,6 +24,7 @@ main section #view {
     margin-right:6px; padding:20px 30px;
     color:#222; border:1px solid #222;
     border-radius:50px;
+    display: inline-block;
 }
 main section #view:hover {
     color:#fff;
@@ -38,12 +39,13 @@ main .main_contents {
     background:url(../images/banner_01.jpg) no-repeat;
     background-size:cover;
     background-position:center;
-    position: relative;
+    text-align: center;
+    /* position: relative; */
 }
-main .main_contents > * {position:absolute;}
-main .main_contents p {bottom:195px; left:42%;}
-main .main_contents h2 {bottom:134px; left:22%;}
-main .main_contents #view {bottom:50px; left:45%;}
+main .main_contents > * {
+    padding-top: 480px;
+}
+main .main_contents h2 {padding:30px 0 25px; line-height: 1.2;}
 main .sub_contents {display:flex;}
 main .sub_contents > img {
     width: 800px; height: 800px;
@@ -55,13 +57,14 @@ main .sub_contents .right {
     align-items: flex-start; justify-content: center;
 }
 main .sub_contents .right p {}
-main .sub_contents .right h2 {margin:100px 0 50px;}
+main .sub_contents .right h2 {margin:100px 0 50px; line-height: 1.2;}
 main > .best,
 main > .lovers {
     max-width:1240px;
+    width:calc(100% - 30px);
     margin: 0 auto;
 }
-main .best > p {
+main .best h2 {
     font-size:2.5rem; font-weight:500; 
     text-align: center;
     margin-top:100px;
@@ -70,30 +73,28 @@ main .best > p {
 main .best_contents {
     display:flex; justify-content: space-between;
     margin-bottom:80px;
+    text-align: center;
 }
-main .best_contents .contents {position: relative;}
-main .best_contents .contents img {width:100%;}
-main .best_contents .c1,
-main .best_contents .c3 {width:340px;}
-main .best_contents .c2 {width: 490px;}
-
 main .best_contents .contents .content_txt {
     display:block;  
     text-align:center; line-height:29px; font-size:1.25rem;
-    position:absolute; 
     font-weight:500;
 }
-main .best_contents .contents .t1,
-main .best_contents .contents .t3 {
-    width:340px; bottom:5%;
+main .best .best_contents .contents {padding-top:360px;}
+main .best .best_contents .c1 {
+    background:url(../images/best_01.jpg);
 }
-main .best_contents .contents .t2 {
-    width:490px; bottom:5%;
+main .best .best_contents .c2 {
+    width: 490px;
+    background:url(../images/best_02-1.jpg);
+}
+main .best .best_contents .c3 {
+    background:url(../images/best_03.jpg);
 }
 main .best_contents .contents:hover {color:#E4485D;}
 /* lovers */
 main .lovers {}
-main .lovers > p {
+main .lovers h2 {
     font-size:2.5rem; font-weight:500; 
     text-align: center;
     margin-top:80px;

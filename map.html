@@ -14,6 +14,7 @@
     <!-- style -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
     <style>
         main {
             max-width:1240px;
@@ -187,25 +188,24 @@
                     <ul class="sub s5"></ul>
                 </li>
             </ul>
-            <!-- <a href="#" class="m_nav">
-                <span></span><span></span><span></span>
-            </a> -->
         </nav>
         <div class="nav_right">
             <a href="./map.html" id="map_btn"><span>매장찾기</span></a>
             <a href="#" id="search"><img src="./images/png/search.png" alt="검색"></a>
         </div>
+        <a href="#" class="m_nav"><img src="./images/png/menu.png" alt="메뉴열기"></a>
+        <!-- <a href="#" class="m_nav"><span></span><span></span><span></span></a> -->
         <!-- m_nav_open -->
-        <!-- <div id="m_nav_open">
+        <div id="m_nav_open">
             <ul>
                 <li><a href="#">헤라 스토리</a></li>
                 <li><a href="#">메이크업</a></li>
                 <li><a href="#">스킨케어</a></li>
                 <li><a href="#">프래그런스</a></li>
                 <li><a href="#">#HERA</a></li>
-                <li><a href="./map.html" class="map_search">매장찾기</a></li>
             </ul>
-        </div> -->
+                <a href="./map.html" class="map_search">매장찾기</a>
+        </div>
         <!-- open_search -->
         <div id="open_search">
             <div class="search">
@@ -249,25 +249,27 @@
     <!-- footer.php -->
     <!-- <?php include('./footer.php') ?> -->
     <footer>
-        <div class="f_top">
-            <div class="left">
-                <a href="#">서비스이용약관</a>
-                <a href="#">UGC이용약관</a>
-                <a href="#">개인정보처리방침</a>
-                <a href="#">뷰티포인트</a>
-                <a href="#">사이트맵</a>
+        <div class="f_wrap">
+            <div class="f_top">
+                <div class="left">
+                    <a href="#">서비스이용약관</a>
+                    <a href="#">UGC이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">뷰티포인트</a>
+                    <a href="#">사이트맵</a>
+                </div>
+                <div class="right">
+                    <a href="#" title="페이스북"><img src="./images/png/facebook.png" alt=""></a>
+                    <a href="#" title="유튜브"><img src="./images/png/youtube.png" alt=""></a>
+                    <a href="#" title="인스타그램"><img src="./images/png/instagram.png" alt=""></a>
+                    <a href="#" title="카카오톡"><img src="./images/png/kakaotalk.png" alt=""></a>
+                </div>
             </div>
-            <div class="right">
-                <a href="#" title="페이스북"><img src="./images/png/facebook.png" alt=""></a>
-                <a href="#" title="유튜브"><img src="./images/png/youtube.png" alt=""></a>
-                <a href="#" title="인스타그램"><img src="./images/png/instagram.png" alt=""></a>
-                <a href="#" title="카카오톡"><img src="./images/png/kakaotalk.png" alt=""></a>
+            <p>고객상담팀(수신자요금부담) 080-023-5454 (상담시간 월~금 : AM 09:00 ~ PM 06:00)</p>
+            <div class="f_btm">
+                <p>© AMOREPACIFIC CORPORATION. All rights reserved.</p>
+                <a href="#"><img src="./images/web-accessibility_kr_230510.png" alt=""></a>
             </div>
-        </div>
-        <p>고객상담팀(수신자요금부담) 080-023-5454 (상담시간 월~금 : AM 09:00 ~ PM 06:00)</p>
-        <div class="f_btm">
-            <p>© AMOREPACIFIC CORPORATION. All rights reserved.</p>
-            <a href="#"><img src="./images/web-accessibility_kr_230510.png" alt=""></a>
         </div>
     </footer>
     <!-- common JS -->

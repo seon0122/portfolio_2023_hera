@@ -1,5 +1,6 @@
 main {
     max-width:1240px; margin:0 auto;
+    width:calc(100% - 30px);
 }
 main .container {
     /* background:aqua; */
@@ -59,10 +60,11 @@ main .container .txt .order > * {
     padding: 20px 40px;
     display: block;
     width: 48%;
+    white-space:nowrap;
 }
 main .container .txt .order .buy {
     color: #fff;
-    background: #222;
+    background: #222; margin-right:10px;
 }
 main .container .txt .order .offline {
     color: #222;

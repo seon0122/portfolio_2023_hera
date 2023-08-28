@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/product_list.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 </head>
 <body>
     <!-- header php -->
@@ -145,25 +146,23 @@
                     <ul class="sub s5"></ul>
                 </li>
             </ul>
-            <!-- <a href="#" class="m_nav">
-                <span></span><span></span><span></span>
-            </a> -->
         </nav>
         <div class="nav_right">
             <a href="./map.html" id="map_btn"><span>매장찾기</span></a>
             <a href="#" id="search"><img src="./images/png/search.png" alt="검색"></a>
         </div>
+        <a href="#" class="m_nav"><img src="./images/png/menu.png" alt="메뉴열기"></a>
         <!-- m_nav_open -->
-        <!-- <div id="m_nav_open">
+        <div id="m_nav_open">
             <ul>
                 <li><a href="#">헤라 스토리</a></li>
                 <li><a href="#">메이크업</a></li>
                 <li><a href="#">스킨케어</a></li>
                 <li><a href="#">프래그런스</a></li>
                 <li><a href="#">#HERA</a></li>
-                <li><a href="./map.html" class="map_search">매장찾기</a></li>
             </ul>
-        </div> -->
+                <a href="./map.html" class="map_search">매장찾기</a>
+        </div>
         <!-- open_search -->
         <div id="open_search">
             <div class="search">
@@ -191,160 +190,168 @@
         </div>
     </header>
     <main>
-        <div class="visual">
-            <h1>Y2K 무드의<br>볼드 맥시멀 글로우 리퀴드</h1>
-            <p>NEW 센슈얼 피팅 글로우 틴트</p>
+        <div class="visual_bg">
+            <div class="visual">
+                <h1>Y2K 무드의<br>볼드 맥시멀 글로우 리퀴드</h1>
+                <p>NEW 센슈얼 피팅 글로우 틴트</p>
+            </div>
         </div>
-        <h2>메이크업</h2>
-        <section class="p_wrap">
-            <p>총 12개 상품</p>
-            <div class="p_filter">
-                <select id="product_align">
-                    <option value="">제품 전체</option>
-                    <option value="">파운데이션</option>
-                    <option value="">쿠션</option>
-                    <option value="">베이스/프라이머</option>
-                    <option value="">파우더/픽서</option>
-                    <option value="">컨실러</option>
-                    <option value="">브러시/어플리케이터</option>
-                </select>
-                <a href="#"><img src="./images/png/4_black_squares.png" alt=""></a>
-                <a href="#"><img src="./images/png/bars.png" alt=""></a>
-            </div>
-        </section>
-        <section class="container">
-            <div class="item item1">
-                <div class="box">
-                    <a href="./product_detail.html" class="item_img"><img src="./images/product_list_02.jpg" alt=""></a>
+        <div class="product_warp">
+            <h2>메이크업</h2>
+            <section class="p_wrap">
+                <p>총 12개 상품</p>
+                <div class="p_filter">
+                    <!-- <div id="select_box">
+                        <button type="button" class="box_title">제품 전체<img src="./images/png/down.png" alt=""></button>
+                        <ul class="box_contents hide">
+                            <li><button type="button">파운데이션</button></li>
+                            <li><button type="button">쿠션</button></li>
+                            <li><button type="button">베이스/프라이머</button></li>
+                            <li><button type="button">파우더/픽서</button></li>
+                            <li><button type="button">컨실러</button></li>
+                            <li><button type="button">브러시/어플리케이터</button></li>
+                        </ul>
+                    </div> -->
+                    <a href="#"><img src="./images/png/4_black_squares.png" alt=""></a>
+                    <a href="#"><img src="./images/png/bars.png" alt=""></a>
                 </div>
-                <div class="txt">
-                    <a href="./product_detail.html">
-                        <p class="name">실키 스테이 24H 롱웨어 파운데이션</p>
-                        <p class="detail">SILKY STAY 24H LONGWEAR SPF 20/ PA++<br>30g</p>
-                    </a>
-                    <p class="color">
-                        <span class="fetal"></span>
-                        <span class="ivory"></span>
-                        <span class="beige"></span>
-                        <span class="sand"></span>
-                        <span class="warm"></span>
-                    </p>
+            </section>
+            <section class="container">
+                <div class="item item1">
+                    <div class="box">
+                        <a href="./product_detail.html" class="item_img"><img src="./images/product_list_02.jpg" alt=""></a>
+                    </div>
+                    <div class="txt">
+                        <a href="./product_detail.html">
+                            <p class="name">실키 스테이 24H 롱웨어 파운데이션</p>
+                            <p class="detail">SILKY STAY 24H LONGWEAR SPF 20/ PA++<br>30g</p>
+                        </a>
+                        <p class="color">
+                            <span class="fetal"></span>
+                            <span class="ivory"></span>
+                            <span class="beige"></span>
+                            <span class="sand"></span>
+                            <span class="warm"></span>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="item item2">
-                <div class="box">
-                    <a href="./product_detail.html" class="item_img"><img src="./images/product_list_02.jpg" alt=""></a>
+                <div class="item item2">
+                    <div class="box">
+                        <a href="./product_detail.html" class="item_img"><img src="./images/product_list_02.jpg" alt=""></a>
+                    </div>
+                    <div class="txt">
+                        <a href="./product_detail.html">
+                            <p class="name">실키 스테이 24H 롱웨어 파운데이션</p>
+                            <p class="detail">SILKY STAY 24H LONGWEAR SPF 20/ PA++<br>30g</p>
+                        </a>
+                        <p class="color">
+                            <span class="fetal"></span>
+                            <span class="ivory"></span>
+                            <span class="beige"></span>
+                            <span class="sand"></span>
+                            <span class="warm"></span>
+                        </p>
+                    </div>
                 </div>
-                <div class="txt">
-                    <a href="./product_detail.html">
-                        <p class="name">실키 스테이 24H 롱웨어 파운데이션</p>
-                        <p class="detail">SILKY STAY 24H LONGWEAR SPF 20/ PA++<br>30g</p>
-                    </a>
-                    <p class="color">
-                        <span class="fetal"></span>
-                        <span class="ivory"></span>
-                        <span class="beige"></span>
-                        <span class="sand"></span>
-                        <span class="warm"></span>
-                    </p>
+                <div class="item item3">
+                    <div class="box">
+                        <a href="./product_detail.html" class="item_img"><img src="./images/product_list_02.jpg" alt=""></a>
+                    </div>
+                    <div class="txt">
+                        <a href="./product_detail.html">
+                            <p class="name">실키 스테이 24H 롱웨어 파운데이션</p>
+                            <p class="detail">SILKY STAY 24H LONGWEAR SPF 20/ PA++<br>30g</p>
+                        </a>
+                        <p class="color">
+                            <span class="fetal"></span>
+                            <span class="ivory"></span>
+                            <span class="beige"></span>
+                            <span class="sand"></span>
+                            <span class="warm"></span>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="item item3">
-                <div class="box">
-                    <a href="./product_detail.html" class="item_img"><img src="./images/product_list_02.jpg" alt=""></a>
+                <div class="item item4">
+                    <div class="box">
+                        <a href="./product_detail.html" class="item_img"><img src="./images/product_list_02.jpg" alt=""></a>
+                    </div>
+                    <div class="txt">
+                        <a href="./product_detail.html">
+                            <p class="name">실키 스테이 24H 롱웨어 파운데이션</p>
+                            <p class="detail">SILKY STAY 24H LONGWEAR SPF 20/ PA++<br>30g</p>
+                        </a>
+                        <p class="color">
+                            <span class="fetal"></span>
+                            <span class="ivory"></span>
+                            <span class="beige"></span>
+                            <span class="sand"></span>
+                            <span class="warm"></span>
+                        </p>
+                    </div>
                 </div>
-                <div class="txt">
-                    <a href="./product_detail.html">
-                        <p class="name">실키 스테이 24H 롱웨어 파운데이션</p>
-                        <p class="detail">SILKY STAY 24H LONGWEAR SPF 20/ PA++<br>30g</p>
-                    </a>
-                    <p class="color">
-                        <span class="fetal"></span>
-                        <span class="ivory"></span>
-                        <span class="beige"></span>
-                        <span class="sand"></span>
-                        <span class="warm"></span>
-                    </p>
+                <div class="item item5">
+                    <div class="box">
+                        <a href="./product_detail.html" class="item_img"><img src="./images/product_list_02.jpg" alt=""></a>
+                    </div>
+                    <div class="txt">
+                        <a href="./product_detail.html">
+                            <p class="name">실키 스테이 24H 롱웨어 파운데이션</p>
+                            <p class="detail">SILKY STAY 24H LONGWEAR SPF 20/ PA++<br>30g</p>
+                        </a>
+                        <p class="color">
+                            <span class="fetal"></span>
+                            <span class="ivory"></span>
+                            <span class="beige"></span>
+                            <span class="sand"></span>
+                            <span class="warm"></span>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="item item4">
-                <div class="box">
-                    <a href="./product_detail.html" class="item_img"><img src="./images/product_list_02.jpg" alt=""></a>
+                <div class="item item6">
+                    <div class="box">
+                        <a href="./product_detail.html" class="item_img"><img src="./images/product_list_02.jpg" alt=""></a>
+                    </div>
+                    <div class="txt">
+                        <a href="./product_detail.html">
+                            <p class="name">실키 스테이 24H 롱웨어 파운데이션</p>
+                            <p class="detail">SILKY STAY 24H LONGWEAR SPF 20/ PA++<br>30g</p>
+                        </a>
+                        <p class="color">
+                            <span class="fetal"></span>
+                            <span class="ivory"></span>
+                            <span class="beige"></span>
+                            <span class="sand"></span>
+                            <span class="warm"></span>
+                        </p>
+                    </div>
                 </div>
-                <div class="txt">
-                    <a href="./product_detail.html">
-                        <p class="name">실키 스테이 24H 롱웨어 파운데이션</p>
-                        <p class="detail">SILKY STAY 24H LONGWEAR SPF 20/ PA++<br>30g</p>
-                    </a>
-                    <p class="color">
-                        <span class="fetal"></span>
-                        <span class="ivory"></span>
-                        <span class="beige"></span>
-                        <span class="sand"></span>
-                        <span class="warm"></span>
-                    </p>
-                </div>
-            </div>
-            <div class="item item5">
-                <div class="box">
-                    <a href="./product_detail.html" class="item_img"><img src="./images/product_list_02.jpg" alt=""></a>
-                </div>
-                <div class="txt">
-                    <a href="./product_detail.html">
-                        <p class="name">실키 스테이 24H 롱웨어 파운데이션</p>
-                        <p class="detail">SILKY STAY 24H LONGWEAR SPF 20/ PA++<br>30g</p>
-                    </a>
-                    <p class="color">
-                        <span class="fetal"></span>
-                        <span class="ivory"></span>
-                        <span class="beige"></span>
-                        <span class="sand"></span>
-                        <span class="warm"></span>
-                    </p>
-                </div>
-            </div>
-            <div class="item item6">
-                <div class="box">
-                    <a href="./product_detail.html" class="item_img"><img src="./images/product_list_02.jpg" alt=""></a>
-                </div>
-                <div class="txt">
-                    <a href="./product_detail.html">
-                        <p class="name">실키 스테이 24H 롱웨어 파운데이션</p>
-                        <p class="detail">SILKY STAY 24H LONGWEAR SPF 20/ PA++<br>30g</p>
-                    </a>
-                    <p class="color">
-                        <span class="fetal"></span>
-                        <span class="ivory"></span>
-                        <span class="beige"></span>
-                        <span class="sand"></span>
-                        <span class="warm"></span>
-                    </p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <!-- footer php -->
     <!-- <?php include('./footer.php') ?> -->
     <footer>
-        <div class="f_top">
-            <div class="left">
-                <a href="#">서비스이용약관</a>
-                <a href="#">UGC이용약관</a>
-                <a href="#">개인정보처리방침</a>
-                <a href="#">뷰티포인트</a>
-                <a href="#">사이트맵</a>
+        <div class="f_wrap">
+            <div class="f_top">
+                <div class="left">
+                    <a href="#">서비스이용약관</a>
+                    <a href="#">UGC이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">뷰티포인트</a>
+                    <a href="#">사이트맵</a>
+                </div>
+                <div class="right">
+                    <a href="#" title="페이스북"><img src="./images/png/facebook.png" alt=""></a>
+                    <a href="#" title="유튜브"><img src="./images/png/youtube.png" alt=""></a>
+                    <a href="#" title="인스타그램"><img src="./images/png/instagram.png" alt=""></a>
+                    <a href="#" title="카카오톡"><img src="./images/png/kakaotalk.png" alt=""></a>
+                </div>
             </div>
-            <div class="right">
-                <a href="#" title="페이스북"><img src="./images/png/facebook.png" alt=""></a>
-                <a href="#" title="유튜브"><img src="./images/png/youtube.png" alt=""></a>
-                <a href="#" title="인스타그램"><img src="./images/png/instagram.png" alt=""></a>
-                <a href="#" title="카카오톡"><img src="./images/png/kakaotalk.png" alt=""></a>
+            <p>고객상담팀(수신자요금부담) 080-023-5454 (상담시간 월~금 : AM 09:00 ~ PM 06:00)</p>
+            <div class="f_btm">
+                <p>© AMOREPACIFIC CORPORATION. All rights reserved.</p>
+                <a href="#"><img src="./images/web-accessibility_kr_230510.png" alt=""></a>
             </div>
-        </div>
-        <p>고객상담팀(수신자요금부담) 080-023-5454 (상담시간 월~금 : AM 09:00 ~ PM 06:00)</p>
-        <div class="f_btm">
-            <p>© AMOREPACIFIC CORPORATION. All rights reserved.</p>
-            <a href="#"><img src="./images/web-accessibility_kr_230510.png" alt=""></a>
         </div>
     </footer>
     <!-- common JS -->

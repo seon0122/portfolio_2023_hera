@@ -1,4 +1,29 @@
 /* 반응형웹 */
-/* @media screen and (max-width:480px){
-    h
+@media screen and (max-width:1200px){
+    header nav ul,
+    header .nav_right {display: none;}
+    header .m_nav {display:block;}
+    /* m_nav_open */
+    header #m_nav_open {display:block;}
+}
+@media (max-width:900px){}
+
+
+
+/* @media (max-width:900px){
+    main section {width:calc(100% - 30px);}
+    main .container .item a,
+    main .container .item a:nth-child(4n) {
+        width:calc(33.33% - 40px / 3); margin-right:20px;
+    }
+    main .container .item a:nth-child(3n) {margin-right:0;}
+}
+@media (max-width:400px){
+    main section {width:calc(100% - 30px);}
+    main .container .item a,
+    main .container .item a:nth-child(3n),
+    main .container .item a:nth-child(4n) {
+        width:calc(50% - 20px /2); margin-right:20px;
+    }
+    main .container .item a:nth-child(2n) {margin-right: 0;}
 } */
