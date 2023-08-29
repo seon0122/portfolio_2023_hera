@@ -38,6 +38,7 @@ header nav .gnb > li > a {
   white-space: nowrap;
 }
 header nav ul li a.active {
+  line-height: 86px;
   border-bottom: 4px solid #e4485d;
 }
 header nav .nav_right {
@@ -62,7 +63,7 @@ header nav ul li .sub {
   padding-top: 55px;
   position: absolute;
   left: 0;
-  z-index: 999;
+  z-index:200;
 }
 header nav ul li .sub li {
   margin-right: 80px;
@@ -190,6 +191,7 @@ header #open_search {
   width: 100%;
   /* height:90px; */
   padding: 60px 0;
+  z-index: 999;
 }
 header #open_search .search {
   display: flex;

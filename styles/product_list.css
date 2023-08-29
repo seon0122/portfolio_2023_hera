@@ -1,6 +1,7 @@
 main {}
 main .banner_bg {
     background:url(../images/product_list_04.jpg) no-repeat;
+    background-image:'default-image.jpg';
     background-size:cover;
     height:500px;
 }
@@ -16,9 +17,9 @@ main .banner h1 {
 }
 main .banner p {font-size:1.625rem;}
 main .product_warp {
-    width:1240px;
+    max-width:1240px;
     margin:0 auto;
-    width:calc(100% - 30px);
+    /* width:calc(100% - 30px); */
 }
 main h2 {
     font-size:2.375rem; font-weight:500;
@@ -44,6 +45,7 @@ main .container {
     display:flex; flex-flow:row wrap;
     justify-content: space-between;
     margin-bottom: 100px;
+    width:(33.33% - 100px / 3);
 }
 main .container .item {}
 main .container .item:hover .txt a p {

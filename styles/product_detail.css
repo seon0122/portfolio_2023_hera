@@ -8,7 +8,7 @@ main .container {
     position: relative;
 }
 main .container .box {width:610px; height:550px;}
-main .container .box img {width:100%;}
+main .container .box img {max-width:100%;}
 main .container .txt {width:525px;}
 main .container .txt .share {
     display: inline-block;
@@ -53,7 +53,7 @@ main .container .txt .color_box .color a .c_23W1 {background:#f8cfa9;}
 main .container .txt .color_box .color a .c_25N1 {background:#f2bfa0;}
 main .container .txt .order {
     display: flex;
-    justify-content: space-betweenㅓ;
+    justify-content: space-between;
     text-align: center;
 }
 main .container .txt .order > * {
