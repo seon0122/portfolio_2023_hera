@@ -31,10 +31,16 @@
     /* main-1 */
     main .visual {
         background-image:url(../images/m_main.jpg);
+        height: 700px;
     }
+    main .visual > * {margin-left:50px;}
     main .visual h1 {
-        margin-bottom:150px; font-size:3.5rem; margin-top: 0; padding-top:150px;
+        margin-bottom:110px; font-size:3.5rem; margin-top: 0; padding-top:150px;
         line-height:70px;
+    }
+    main .visual p {
+        margin-bottom: 50px;
+        font-size: 2rem;
     }
     main #p_container {
         display: flex;
