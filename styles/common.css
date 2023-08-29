@@ -160,7 +160,7 @@ header #m_nav_open {
   top: 90px;
   left: 0;
   text-align: center;
-  z-index: 999;
+  z-index: 500;
 }
 header #m_nav_open ul {
   margin: 30px 0;
