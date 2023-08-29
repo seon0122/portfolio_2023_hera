@@ -1,5 +1,6 @@
 /* common.css == header, footer 공통영역 Design */
 /* header */
+header, main, footer {min-width:450px;}
 header {
   background: #fff;
   height: 90px;

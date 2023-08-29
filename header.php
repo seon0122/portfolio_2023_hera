@@ -1,22 +1,27 @@
 <header>
-    <h1><a href="./index.html"><img src="./images/logo.jpg" alt="logo"></a></h1>
+    <h1>
+        <a href="./index.html"><img src="./images/logo.jpg" alt="logo" /></a>
+    </h1>
     <nav>
         <ul class="gnb">
-            <li><a href="#">헤라 스토리</a>
+            <li>
+                <a href="./product_list.html">헤라 스토리</a>
                 <ul class="sub s1">
-                    <li><a href="#">브랜드 소개</a></li>
-                    <li><a href="#">에이 크루</a></li>
-                    <li><a href="#">캠페인 라이브러리</a></li>
+                    <li><a href="./product_list.html">브랜드 소개</a></li>
+                    <li><a href="./product_list.html">에이 크루</a></li>
+                    <li><a href="./product_list.html">캠페인 라이브러리</a></li>
                     <li></li>
                     <li></li>
                 </ul>
             </li>
-            <li><a href="#">메이크업</a>
+            <li>
+                <a href="./product_list.html">메이크업</a>
                 <ul class="sub s2">
-                    <li><span>페이스</span>
+                    <li>
+                        <span>페이스</span>
                         <ul class="sub2">
-                            <li><a href="#">제품 전체</a></li>
-                            <li><a href="#">파운데이션</a></li>
+                            <li><a href="./product_list.html">제품 전체</a></li>
+                            <li><a href="./product_list.html">파운데이션</a></li>
                             <li><a href="#">쿠션</a></li>
                             <li><a href="#">베이스/프라이머</a></li>
                             <li><a href="#">파우더/픽서</a></li>
@@ -24,17 +29,19 @@
                             <li><a href="#">브러시/어플리케이터</a></li>
                         </ul>
                     </li>
-                    <li><span>립</span>
+                    <li>
+                        <span>립</span>
                         <ul class="sub2">
-                            <li><a href="#">제품 전체</a></li>
+                            <li><a href="./product_list.html">제품 전체</a></li>
                             <li><a href="#">립스틱</a></li>
                             <li><a href="#">틴트</a></li>
                             <li><a href="#">립 밤/글로스</a></li>
                         </ul>
                     </li>
-                    <li><span>아이</span>
+                    <li>
+                        <span>아이</span>
                         <ul class="sub2">
-                            <li><a href="#">제품 전체</a></li>
+                            <li><a href="./product_detail.html">제품 전체</a></li>
                             <li><a href="#">아이섀도</a></li>
                             <li><a href="#">마스카라</a></li>
                             <li><a href="#">아이브로우</a></li>
@@ -42,20 +49,22 @@
                         </ul>
                     </li>
                     <li class="right">
-                        <a href="#"><img src="./images/nav_01-02.jpg" alt="">
+                        <a href="./product_list.html"><img src="./images/nav_01-02.jpg" alt="" />
                             <em>SENSUAL POWDER MATTE LIQUID</em>
                         </a>
-                        <a href="#"><img src="./images/nav_02.jpg" alt="">
+                        <a href="./product_list.html"><img src="./images/nav_02.jpg" alt="" />
                             <em>BLACK CUSHION</em>
                         </a>
                     </li>
                 </ul>
             </li>
-            <li><a href="#">스킨케어</a>
+            <li>
+                <a href="./product_list.html">스킨케어</a>
                 <ul class="sub s3">
-                    <li><span>라인별</span>
+                    <li>
+                        <span>라인별</span>
                         <ul class="sub2">
-                            <li><a href="#">제품 전체</a></li>
+                            <li><a href="./product_list.html">제품 전체</a></li>
                             <li><a href="#">클렌징</a></li>
                             <li><a href="#">시그니아</a></li>
                             <li><a href="#">에이지 어웨이</a></li>
@@ -65,9 +74,10 @@
                             <li><a href="#">UV프로텍터</a></li>
                         </ul>
                     </li>
-                    <li><span>고민별</span>
+                    <li>
+                        <span>고민별</span>
                         <ul class="sub2">
-                            <li><a href="#">제품 전체</a></li>
+                            <li><a href="./product_list.html">제품 전체</a></li>
                             <li><a href="#">수분/보습</a></li>
                             <li><a href="#">브라이트닝</a></li>
                             <li><a href="#">피부보호/차단</a></li>
@@ -75,9 +85,10 @@
                             <li><a href="#">프리미엄 안티에이징</a></li>
                         </ul>
                     </li>
-                    <li><span>유형별</span>
+                    <li>
+                        <span>유형별</span>
                         <ul class="sub2">
-                            <li><a href="#">제품 전체</a></li>
+                            <li><a href="./product_list.html">제품 전체</a></li>
                             <li><a href="#">클렌저</a></li>
                             <li><a href="#">토너/워터</a></li>
                             <li><a href="#">에멀젼</a></li>
@@ -88,46 +99,62 @@
                         </ul>
                     </li>
                     <li class="right">
-                        <a href="#"><img src="./images/nav_01-02.jpg" alt="">
+                        <a href="./product_list.html"><img src="./images/nav_01-02.jpg" alt="" />
                             <em>SIGNIA CORE LIFTING SERUM</em>
                         </a>
-                        <a href="#"><img src="./images/nav_02.jpg" alt="">
+                        <a href="./product_list.html"><img src="./images/nav_02.jpg" alt="" />
                             <em>UV PROTECTOR MULTI-DEFENSE FRESH SPF50++/PA+++</em>
                         </a>
                     </li>
                 </ul>
             </li>
-            <li><a href="#">프래그런스</a>
+            <li>
+                <a href="./product_list.html">프래그런스</a>
                 <ul class="sub s4">
-                    <li><span>라인별</span>
+                    <li>
+                        <span>라인별</span>
                         <ul class="sub2">
-                            <li><a href="#">제품 전체</a></li>
-                            <li><a href="#">지일/벨벳 나이트</a></li>
+                            <li><a href="./product_list.html">제품 전체</a></li>
+                            <li><a href="./product_list.html">지일/벨벳 나이트</a></li>
                         </ul>
                     </li>
-                    <li><span>유형별</span>
+                    <li>
+                        <span>유형별</span>
                         <ul class="sub2">
-                            <li><a href="#">제품 전체</a></li>
-                            <li><a href="#">향수</a></li>
-                            <li><a href="#">바디</a></li>
+                            <li><a href="./product_list.html">제품 전체</a></li>
+                            <li><a href="./product_list.html">향수</a></li>
+                            <li><a href="./product_list.html">바디</a></li>
                         </ul>
                     </li>
                     <li></li>
                     <li class="right">
-                        <a href="#"><img src="./images/nav_02.jpg" alt="">
+                        <a href="./product_list.html"><img src="./images/nav_02.jpg" alt="" />
                             <em>ZEAL EAU DE PARFUM FOR WOMEN</em>
                         </a>
                     </li>
                 </ul>
             </li>
-            <li><a href="#">#HERA</a>
+            <li>
+                <a href="./product_list.html">#HERA</a>
                 <ul class="sub s5"></ul>
             </li>
         </ul>
     </nav>
     <div class="nav_right">
         <a href="./map.html" id="map_btn"><span>매장찾기</span></a>
-        <a href="#" id="search"><img src="./images/png/search.png" alt="검색"></a>
+        <a href="#" id="search"><img src="./images/png/search.png" alt="검색" /></a>
+    </div>
+    <a href="#" class="m_nav"><img src="./images/png/menu.png" alt="메뉴열기" /></a>
+    <!-- m_nav_open -->
+    <div id="m_nav_open">
+        <ul>
+            <li><a href="./product_list.html">헤라 스토리</a></li>
+            <li><a href="./product_list.html">메이크업</a></li>
+            <li><a href="./product_list.html">스킨케어</a></li>
+            <li><a href="./product_list.html">프래그런스</a></li>
+            <li><a href="./product_list.html">#HERA</a></li>
+        </ul>
+        <a href="./map.html" class="map_search">매장찾기</a>
     </div>
     <!-- open_search -->
     <div id="open_search">
@@ -135,8 +162,8 @@
             <form action="#" method="get" id="searchFrm">
                 <fieldset>
                     <legend class="skip">검색양식</legend>
-                    <img src="./images/png/search.png" alt="">
-                    <input type="search" name="search_txt" autofocus placeholder="검색어를 입력해주세요">
+                    <img src="./images/png/search.png" alt="" />
+                    <input type="search" name="search_txt" autofocus placeholder="검색어를 입력해주세요" />
                 </fieldset>
             </form>
             <a href="#" class="search_btn">검색</a>
@@ -152,6 +179,6 @@
                 <a href="#">#루즈홀릭</a>
             </div>
         </div>
-        <a href="#" class="search_close"><img src="./images/png/up_close.png" alt=""></a>
+        <a href="#" class="search_close"><img src="./images/png/up_close.png" alt="" /></a>
     </div>
 </header>
