@@ -5,11 +5,11 @@
     <nav>
         <ul class="gnb">
             <li>
-                <a href="./product_list.html">헤라 스토리</a>
+                <a href="#">헤라 스토리</a>
                 <ul class="sub s1">
-                    <li><a href="./product_list.html">브랜드 소개</a></li>
-                    <li><a href="./product_list.html">에이 크루</a></li>
-                    <li><a href="./product_list.html">캠페인 라이브러리</a></li>
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">에이 크루</a></li>
+                    <li><a href="#">캠페인 라이브러리</a></li>
                     <li></li>
                     <li></li>
                 </ul>
@@ -99,43 +99,43 @@
                         </ul>
                     </li>
                     <li class="right">
-                        <a href="./product_list.html"><img src="./images/nav_01-02.jpg" alt="" />
+                        <a href="#"><img src="./images/nav_01-02.jpg" alt="" />
                             <em>SIGNIA CORE LIFTING SERUM</em>
                         </a>
-                        <a href="./product_list.html"><img src="./images/nav_02.jpg" alt="" />
+                        <a href="#"><img src="./images/nav_02.jpg" alt="" />
                             <em>UV PROTECTOR MULTI-DEFENSE FRESH SPF50++/PA+++</em>
                         </a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="./product_list.html">프래그런스</a>
+                <a href="#">프래그런스</a>
                 <ul class="sub s4">
                     <li>
                         <span>라인별</span>
                         <ul class="sub2">
-                            <li><a href="./product_list.html">제품 전체</a></li>
-                            <li><a href="./product_list.html">지일/벨벳 나이트</a></li>
+                            <li><a href="#">제품 전체</a></li>
+                            <li><a href="#">지일/벨벳 나이트</a></li>
                         </ul>
                     </li>
                     <li>
                         <span>유형별</span>
                         <ul class="sub2">
-                            <li><a href="./product_list.html">제품 전체</a></li>
-                            <li><a href="./product_list.html">향수</a></li>
-                            <li><a href="./product_list.html">바디</a></li>
+                            <li><a href="#">제품 전체</a></li>
+                            <li><a href="#">향수</a></li>
+                            <li><a href="#">바디</a></li>
                         </ul>
                     </li>
                     <li></li>
                     <li class="right">
-                        <a href="./product_list.html"><img src="./images/nav_02.jpg" alt="" />
+                        <a href="#"><img src="./images/nav_02.jpg" alt="" />
                             <em>ZEAL EAU DE PARFUM FOR WOMEN</em>
                         </a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="./product_list.html">#HERA</a>
+                <a href="#">#HERA</a>
                 <ul class="sub s5"></ul>
             </li>
         </ul>

@@ -1,5 +1,5 @@
 /* 반응형웹 */
-@media screen and (max-width:1200px){
+@media screen and (max-width:1100px){
     header {padding: 0 30px;}
     header nav ul,
     header .nav_right {display: none;}
@@ -8,12 +8,13 @@
     header #m_nav_open {display:block;}
     /* product_list */
     main .banner_bg {
-        background-image: url(../images/product_list_01.jpg);
+        background-image: url(../images/product_list_bg01.jpg);
         background-position: center center;
         background-size: cover;
     }
     main .banner {
         left: 30px;
+        top:220px;
     }
     main .banner h2 {font-size:1.313rem; line-height: 29px;}
     main .product_warp {
@@ -24,6 +25,9 @@
     }
     main .container .item .box .item_img img {
         width: 80%;
+    }
+    main .main_contents h2 {
+        font-size: 1.7rem;
     }
 }
 @media (max-width:900px){
@@ -42,22 +46,22 @@
         margin-bottom: 50px;
         font-size: 2rem;
     }
+    /* product_detail */
     main #p_container {
         display: flex;
         flex-flow: column;
         align-items: center;
         width:100%;
     }
-    main #p_container > img {background: aqua;}
-    main #p_container .txt {width: 100%;}
     main .container .txt .t_wrap h1 {margin-top:60px;}
     /* main #p_container .txt .t_wrap {margin-top: 70px;} */
-    main #p_container .txt .share {margin-top:0;}
+    /* main #p_container .txt .share {margin-top:0;} */
     main #p_container .box {
         /* margin:0 auto; */
         text-align: center;
-        width: 70%;
-        height: auto;
+        /* width: 80%; */
+        /* height: 400px; */
+        /* height: auto; */
         /* width: fit-content; */
     }
     /* main-2 */
@@ -91,7 +95,6 @@
         position: absolute;
         right: 25px;
     }
-
     /* 공통 .view css */
     main section #view {
         font-size:0.875rem; padding:12px 20px;
@@ -119,6 +122,18 @@
         padding-top: 45%;
         height: 340px;
     } */
+
+    /* lover */
+    main .lovers #lovers_slide .swiper-wrapper .swiper-slide {
+        /* 공통 slide 1~6 */
+        width:100%; 
+        /* height:290px; */
+        position: relative;
+    }
+    main .lovers #lovers_slide .swiper-wrapper .swiper-slide .slide_txt {
+        position: absolute;
+        width:100%;
+    }
 
     /* product_list */
     main .container {
@@ -156,7 +171,9 @@
     footer .f_btm a {width: 40px;}
 }
 @media (max-width:480px){
-    main .sub_contents > img {width:100%;}
+    main .banner h1 {font-size: 2rem;}
+    main .banner p {font-size: 1.2rem;}
+    /* main .sub_contents > img {width:100%;} */
     main .visual h1 {margin-bottom:150px; font-size:1.750rem;}
     main .visual h1,
     main .visual p {font-size:1.375rem;}
@@ -169,5 +186,38 @@
         width: 100%;
         /* width:calc(100% - 30px); */
     }
+    main .best .best_contents .c1,
+    main .best .best_contents .c3 {width: 100%;}
     main .best .best_contents .c2 {display: none;}
+    main .best_contents .contents .content_txt {
+        font-size: 1rem;
+    }
+    main .sub_contents p {
+        font-size: 1rem;
+    }
+    main .sub_contents h2 {
+        font-size: 1.7rem;
+    }
+    /* product_detail */
+    main #p_container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width:100%;
+    }
+    main #p_container > img {
+        width: 80%;
+    }
+    main #p_container .txt {
+        width: 100%;
+        margin-top: 50px;
+    }
+    /* main .container .txt .t_wrap h1 {margin-top:0;} */
+    /* main #p_container .txt .t_wrap {margin-top: 70px;} */
+    /* main #p_container .txt .share {margin-top:0;} */
+    main #p_container .box {
+        /* margin:0 auto; */
+        text-align: center;
+        /* width: 80%; */
+    }
 }
