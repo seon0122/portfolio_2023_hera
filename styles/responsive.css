@@ -112,9 +112,12 @@
         width:50%; margin:0 15px;
         font-size: 1.25rem;
     }
-    main .sub_contents .right h2 {margin:30px 0;}
+    main .sub_contents .right h2 {
+        margin:30px 0;
+        font-size: 1.7rem;
+    }
 
-    /* main .best_contents .c2 {display: none;} */
+    main .best_contents .c2 {display: none;}
     main .best h2 {margin-bottom: 0;}
     /* main .best_contents .c1,
     main .best_contents .c2,
